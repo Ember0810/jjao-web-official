@@ -15,6 +15,8 @@ import "../public/assets/css/style.css"
 import "../public/assets/css/woocommerce-layout.css"
 import "../public/assets/css/woocommerce.css"
 
+import "../public/assets/css/globals.css"
+
 
 function MyApp({ Component, pageProps }) {
 
@@ -27,7 +29,7 @@ function MyApp({ Component, pageProps }) {
     }, [])
     return (
         <>
-            <title>Creote - Corporate & Consulting Business NextJS Template</title>
+            <title>四大核心力 × 企業培訓 × 商務媒合 一站式顧問服務 | JJAO 佼點</title>
             {!loading ? (
                 <Component {...pageProps} />
             ) : (

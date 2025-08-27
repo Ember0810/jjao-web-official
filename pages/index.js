@@ -1,41 +1,41 @@
-import FloatingMenu from "@/components/layout/FloatingMenu"
-import Layout from "@/components/layout/Layout"
-import About1 from "@/components/sections/About1"
-import Blog1 from "@/components/sections/Blog1"
-import Expertise from "@/components/sections/Expertise"
-import HeroSlider1 from "@/components/sections/HeroSlider1"
-import Newsteller1 from "@/components/sections/Newsteller1"
-import Process1 from "@/components/sections/Process1"
-import Project1 from "@/components/sections/Project1"
-import Service1 from "@/components/sections/Service1"
-import Team1 from "@/components/sections/Team1"
-import Testimonial1 from "@/components/sections/Testimonial1"
-import { useState } from "react"
-import Head from 'next/head'
+import Layout from "@/components/home/layout/Layout";
+import Head from "next/head";
+import About6 from "@/components/sections/About6";
+import Blog7 from "@/components/sections/Blog7";
+import Client3 from "@/components/sections/Client3";
+import Contact3 from "@/components/sections/Contact3";
+import Contact4 from "@/components/sections/Contact4";
+import Contact5 from "@/components/sections/Contact5";
+import Project6 from "@/components/sections/Project6";
+import Service from "@/components/home/Service";
+import Team5 from "@/components/sections/Team5";
+import Testimonial6 from "@/components/sections/Testimonial6";
+import HeroSlider from "@/components/home/HeroSlider";
+import About from "@/components/home/About";
+import Contact from "@/components/home/Contact";
 
-export default function Home1() {
-    // Floating
-    const [isFloating, setFloating] = useState(false);
-    const handleFloating = () => setFloating(!isFloating);
+export default function Home() {
+  return (
+    <>
+      <Head>
+        <title>
+          四大核心力 × 企業培訓 × 商務媒合 一站式顧問服務 | JJAO 佼點
+        </title>
+      </Head>
+      <Layout>
+        <HeroSlider />
+        <Service />
+        <About />
 
-    return (
-        <>
-            <Head>
-                <title>Creote - Corporate & Consulting Business NextJS Template</title>
-            </Head>
-            <Layout headerStyle={1} footerStyle={1}>
-                <HeroSlider1 />
-                <About1 />
-                <Service1 />
-                <Expertise />
-                <Process1 />
-                <Team1 />
-                <Project1 />
-                <Testimonial1 />
-                <Blog1 />
-                <Newsteller1 />
-                <FloatingMenu handleFloating={handleFloating} isFloating={isFloating} />
-            </Layout>
-        </>
-    )
+        <Project6 />
+        {/* <Contact3 /> */}
+        <Contact />
+        <Team5 />
+        <Testimonial6 />
+        <Client3 />
+        <Blog7 />
+        <Contact5 />
+      </Layout>
+    </>
+  );
 }
