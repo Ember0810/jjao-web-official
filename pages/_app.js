@@ -15,6 +15,8 @@ import "../public/assets/css/style.css"
 import "../public/assets/css/woocommerce-layout.css"
 import "../public/assets/css/woocommerce.css"
 
+import "../public/assets/css/globals.css"
+
 
 function MyApp({ Component, pageProps }) {
 

@@ -17,7 +17,7 @@
         "eslint": "8.36.0",
         "eslint-config-next": "13.2.4",
         "isotope-layout": "^3.0.6",
-        "next": "13.2.4",
+        "next": "^15.5.2",
         "react": "18.2.0",
         "react-countup": "^6.4.2",
         "react-dom": "18.2.0",
@@ -32,6 +32,9 @@
         "react-countup/countup.js": "2.5.0"
     },
     "devDependencies": {
-        "gh-pages": "^6.3.0"
+        "autoprefixer": "^10.4.21",
+        "gh-pages": "^6.3.0",
+        "postcss": "^8.5.6",
+        "tailwindcss": "^3.4.17"
     }
 }
