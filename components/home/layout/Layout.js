@@ -56,7 +56,7 @@ export default function Layout({
       >
         {/* <StyleSwitcher /> */}
         <div id="wrapper_full" className="content_all_warpper">
-          <MiniCart handleCart={handleCart} />
+          {/* <MiniCart handleCart={handleCart} /> */}
           <Header
             handleSearch={handleSearch}
             handleContactPopup={handleContactPopup}
@@ -72,7 +72,9 @@ export default function Layout({
           <div id="content" className="site-content">
             {children}
           </div>
+          
         </div>
+        
         <Footer />
 
         <MobileMenu

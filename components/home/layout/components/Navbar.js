@@ -159,12 +159,12 @@ export default function Navbar() {
                     </ul>
                 </li>
                 <li className="menu-item menu-item-has-children dropdown nav-item">
-                    <Link href="/#" className="dropdown-toggle nav-link">
+                    <Link href="#about" className="dropdown-toggle nav-link">
                         <span>關於我們</span>
                     </Link>
                 </li>
                 <li className="menu-item menu-item-has-children dropdown dropdown_full position-static mega_menu nav-item">
-                    <Link href="/#" className="dropdown-toggle nav-link"><span>服務內容</span> <span className="fa fa-angle-down"></span></Link>
+                    <Link href="#services" className="dropdown-toggle nav-link"><span>服務內容</span> <span className="fa fa-angle-down"></span></Link>
                     <ul className="dropdown-menu width_60_percentage">
                         <li>
                             <div className="row">
